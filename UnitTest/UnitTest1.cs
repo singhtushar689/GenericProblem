@@ -6,26 +6,26 @@ namespace UnitTest
     {
         FindMaxGeneric<int> genericsMethodForInt = new FindMaxGeneric<int>();
         FindMaxGeneric<double> genericsMethodForFloat = new FindMaxGeneric<double>();
-        FindMaxGeneric<string> genricsMethodFoeSrring = new FindMaxGeneric<string>();
+        FindMaxGeneric<string> genericsMethodForString = new FindMaxGeneric<string>();
 
 
         [Test]
         public void GivenMaxFirstNum_WhenAnalysed_ShouldreturnFirstMax()
         {
-            double result = genericsMethodForFloat.Max(20.7f, 10.4f, 17.9f);
-            Assert.AreEqual(20.7f, result);
+            string result = genericsMethodForString.Max("Tushar","Ritesh","Sachin");
+            Assert.AreEqual("Tushar", result);
         }
         [Test]
         public void GivenMaxSecondNum_WhenAnalysed_ShouldreturnSecondMax()
         {
-            double result = genericsMethodForFloat.Max(10.4f, 20.7f, 17.9f);
-            Assert.AreEqual(20.7f, result);
+            string result = genericsMethodForString.Max("lop", "ryt", "lkj");
+            Assert.AreEqual("ryt", result);
         }
         [Test]
         public void GivenMaxThirdNum_WhenAnalysed_ShouldreturnThirdMax()
         {
-            double result = genericsMethodForFloat.Max(10.4f, 17.9f, 20.7f);
-            Assert.AreEqual(20.7f, result);
+            string result = genericsMethodForString.Max("lop", "aer", "ryt");
+            Assert.AreEqual("ryt", result);
         }
     }
 }

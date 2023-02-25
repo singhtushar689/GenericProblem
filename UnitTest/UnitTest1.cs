@@ -12,20 +12,20 @@ namespace UnitTest
         [Test]
         public void GivenMaxFirstNum_WhenAnalysed_ShouldreturnFirstMax()
         {
-            int result = genericsMethodForInt.Max(20, 10, 17);
-            Assert.AreEqual(20, result);
+            double result = genericsMethodForFloat.Max(20.7f, 10.4f, 17.9f);
+            Assert.AreEqual(20.7f, result);
         }
         [Test]
         public void GivenMaxSecondNum_WhenAnalysed_ShouldreturnSecondMax()
         {
-            int result = genericsMethodForInt.Max(10, 20, 17);
-            Assert.AreEqual(20, result);
+            double result = genericsMethodForFloat.Max(10.4f, 20.7f, 17.9f);
+            Assert.AreEqual(20.7f, result);
         }
         [Test]
         public void GivenMaxThirdNum_WhenAnalysed_ShouldreturnThirdMax()
         {
-            int result = genericsMethodForInt.Max(13, 27, 43);
-            Assert.AreEqual(43, result);
+            double result = genericsMethodForFloat.Max(10.4f, 17.9f, 20.7f);
+            Assert.AreEqual(20.7f, result);
         }
     }
 }

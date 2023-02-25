@@ -17,5 +17,14 @@ namespace GenericProblem
             if (third.CompareTo(first) >= 0 && third.CompareTo(second) >= 0)
                 Console.WriteLine($"{third} is greater");
         }
+        public void MaxValue(float first, float second, float third)
+        {
+            if (first.CompareTo(second) >= 0 && first.CompareTo(third) >= 0)
+                Console.WriteLine($"{first} is greater");
+            if (second.CompareTo(third) >= 0 && second.CompareTo(third) >= 0)
+                Console.WriteLine($"{second} is greater");
+            if (third.CompareTo(first) >= 0 && third.CompareTo(second) >= 0)
+                Console.WriteLine($"{third} is greater");
+        }
     }
 }

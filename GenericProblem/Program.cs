@@ -11,11 +11,9 @@ namespace GenericProblem
         static void Main(string[] args)
         {
             FindMaxInteger max = new FindMaxInteger();
-            max.MaxValue(10, 35, 31);          
+            max.MaxValue(10, 35, 31);
+            max.MaxValue(10.5f, 8.9f, 9.0f);
             Console.ReadLine();
-            FindMaxGeneric<int> maxGeneric = new FindMaxGeneric<int>();
-            maxGeneric.Max(23, 34, 21);
-
         }
     }
 }

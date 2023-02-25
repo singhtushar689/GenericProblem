@@ -13,6 +13,7 @@ namespace GenericProblem
             FindMaxInteger max = new FindMaxInteger();
             max.MaxValue(10, 35, 31);
             max.MaxValue(10.5f, 8.9f, 9.0f);
+            max.MaxValue("Sachin", "Tushar", "Rohan");
             Console.ReadLine();
         }
     }
